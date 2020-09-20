@@ -1,0 +1,9 @@
+{% for entry in list %}
+<li>
+    <h2>{{entry.appid}}</h2>
+    <h3>{{entry.name}}</h3>
+    <h3>{{entry.admission_date}}</h3>
+</li>
+{% else %}
+<li><em>No entries yet</em></li>
+{% endfor %}
